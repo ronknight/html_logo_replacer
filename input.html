@@ -1,0 +1,416 @@
+<style type="text/css">
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .character-list {
+        list-style-type: none;
+        padding-left: 0;
+    }
+    .character-list li {
+        margin-bottom: 5px;
+    }
+    .character-list a {
+        text-decoration: none;
+        padding: 2px 5px;
+        display: inline-block;
+        border-radius: 4px;
+        font-size: 16px;
+        color: #000000; /* Default to black text for non-highlighted items */
+    }
+    /* Default hover effect */
+    .character-list a:hover {
+        text-decoration: underline;
+    }
+    /* Highlighting specific characters */
+    
+/* Styling for Each Character Based on the Image */
+.disney { color: #ffffff !important; background-color: #1e90ff !important; border: 2px solid #00008b !important; }
+    .hello-kitty { color: #ffffff !important; background-color: #ff69b4 !important; border: 2px solid #ff1493 !important; }
+    .mickey-mouse-and-friends { color: #ffffff !important; background-color: #ff0000 !important; border: 2px solid #ffd700 !important; }
+    .disney-princess { color: #ffffff !important; background-color: #ff69b4 !important; border: 2px solid #ffd700 !important; }
+    .justice-league { color: #ffffff !important; background-color: #ff0000 !important; border: 2px solid #000000 !important; }
+    .frozen { color: #ffffff !important; background-color: #87ceeb !important; border: 2px solid #1e90ff !important; }
+    .disney-baby { color: #ffffff !important; background-color: #add8e6 !important; border: 2px solid #00008b !important; }
+    .marvel { color: #ffffff !important; background-color: #ff0000 !important; border: 2px solid #0000ff !important; }
+    .dc-comics { color: #ffffff !important; background-color: #000080 !important; border: 2px solid #ffd700 !important; }
+    .fisher-price { color: #ffffff !important; background-color: #ff6347 !important; border: 2px solid #4682b4 !important; }
+    .hot-wheels { color: #ffffff !important; background-color: #ff4500 !important; border: 2px solid #1e90ff !important; }
+    .spider-man { color: #ffffff !important; background-color: #ff0000 !important; border: 2px solid #0033cc !important; }
+    .disney-junior { color: #ffffff !important; background-color: #ff69b4 !important; border: 2px solid #ff4500 !important; }
+    .star-wars { color: #ffffff !important; background-color: #000000 !important; border: 2px solid #ffffff !important; }
+    .disney-ariel { color: #ffffff !important; background-color: #ff69b4 !important; border: 2px solid #1e90ff !important; }
+    .beauty { color: #ffffff !important; background-color: #ff69b4 !important; border: 2px solid #ffd700 !important; }
+    .belle { color: #ffffff !important; background-color: #ff69b4 !important; border: 2px solid #ffd700 !important; }
+    .toy-story { color: #ffffff !important; background-color: #ffa500 !important; border: 2px solid #00008b !important; }
+    .frozen-2 { color: #ffffff !important; background-color: #4682b4 !important; border: 2px solid #1e90ff !important; }
+    .lol-surprise { color: #ffffff !important; background-color: #ff69b4 !important; border: 2px solid #8b0000 !important; }
+    .grogu { color: #ffffff !important; background-color: #2e8b57 !important; border: 2px solid #000000 !important; }
+    .minnie-mouse { color: #ffffff !important; background-color: #ff69b4 !important; border: 2px solid #ff0000 !important; }
+    .jasmine { color: #ffffff !important; background-color: #add8e6 !important; border: 2px solid #1e90ff !important; }
+    .coca-cola { color: #ffffff !important; background-color: #ff0000 !important; border: 2px solid #000000 !important; }
+    .blues-clues { color: #ffffff !important; background-color: #add8e6 !important; border: 2px solid #1e90ff !important; }
+    .crayola { color: #ffffff !important; background-color: #ffeb3b !important; border: 2px solid #4caf50 !important; }
+    .tiana { color: #ffffff !important; background-color: #32cd32 !important; border: 2px solid #8b4513 !important; }
+    .moana { color: #ffffff !important; background-color: #ff7f50 !important; border: 2px solid #1e90ff !important; }
+    .iron-man { color: #ffffff !important; background-color: #ff4500 !important; border: 2px solid #ffd700 !important; }
+    .superman { color: #ffffff !important; background-color: #000080 !important; border: 2px solid #ff0000 !important; }
+    .batman { color: #ffffff !important; background-color: #000080 !important; border: 2px solid #ffd700 !important; }
+    .rapunzel { color: #ffffff !important; background-color: #ff69b4 !important; border: 2px solid #ffd700 !important; }
+    .black-panther { color: #ffffff !important; background-color: #000000 !important; border: 2px solid #ffffff !important; }
+    .hulk { color: #ffffff !important; background-color: #228b22 !important; border: 2px solid #000000 !important; }
+    .encanto { color: #ffffff !important; background-color: #32cd32 !important; border: 2px solid #8b008b !important; }
+    
+    .alphabet {
+        margin-bottom: 20px;
+    }
+    .alphabet a {
+        margin-right: 10px;
+        font-weight: bold;
+    }
+    </style>
+<div class="container">
+<h1>Popular Licensed Characters</h1>
+<div class="popular-characters" style="display: flex; flex-wrap: wrap; gap: 10px;"><a class="disney" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Disney" style="padding: 5px; border-radius: 5px;">Disney</a> <a class="hello-kitty" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Hello+Kitty" style="padding: 5px; border-radius: 5px;">Hello Kitty</a> <a class="mickey-mouse-and-friends" href="https://www.4sgm.com/lsearch.jhtm?noKeywords=true&amp;facetNameValue=Status_value_In+Stock&amp;facetNameValue=Licensed+Characters_value_Mickey+Mouse+%26+Friends" style="padding: 5px; border-radius: 5px;">Mickey Mouse &amp; Friends</a> <a class="disney-princess" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Disney+Princess" style="padding: 5px; border-radius: 5px;">Disney Princess</a> <a class="justice-league" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Justice+League" style="padding: 5px; border-radius: 5px;">Justice League</a> <a class="frozen" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Frozen" style="padding: 5px; border-radius: 5px;">Frozen</a> <a class="disney-baby" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Disney+Baby" style="padding: 5px; border-radius: 5px;">Disney Baby</a> <a class="marvel" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Marvel" style="padding: 5px; border-radius: 5px;">Marvel</a> <a class="dc-comics" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_DC+Comics" style="padding: 5px; border-radius: 5px;">DC Comics</a> <a class="fisher-price" href="#" style="padding: 5px; border-radius: 5px;">Fisher Price</a> <a class="hot-wheels" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Hot+Wheels" style="padding: 5px; border-radius: 5px;">Hot Wheels</a> <a class="spider-man" href="#" style="padding: 5px; border-radius: 5px;">Spider-Man</a> <a class="disney-junior" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Disney+Junior" style="padding: 5px; border-radius: 5px;">Disney Junior</a> <a class="star-wars" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Star+Wars" style="padding: 5px; border-radius: 5px;">Star Wars</a> <a class="disney-ariel" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Disney+Ariel" style="padding: 5px; border-radius: 5px;">Disney Ariel</a> <a class="beauty" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Beauty" style="padding: 5px; border-radius: 5px;">Beauty</a> <a class="belle" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Belle" style="padding: 5px; border-radius: 5px;">Belle</a> <a class="toy-story" href="https://www.4sgm.com/lsearch.jhtm?noKeywords=true&amp;facetNameValue=Status_value_In+Stock&amp;facetNameValue=Licensed+Characters_value_Toy+Story" style="padding: 5px; border-radius: 5px;">Toy Story</a> <a class="frozen-2" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Frozen+2" style="padding: 5px; border-radius: 5px;">Frozen 2</a> <a class="lol-surprise" href="#" style="padding: 5px; border-radius: 5px;">LOL Surprise</a> <a class="grogu" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Grogu" style="padding: 5px; border-radius: 5px;">Grogu</a> <a class="minnie-mouse" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Minnie+Mouse" style="padding: 5px; border-radius: 5px;">Minnie Mouse</a> <a class="jasmine" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Jasmine" style="padding: 5px; border-radius: 5px;">Jasmine</a> <a class="coca-cola" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Coca-Cola" style="padding: 5px; border-radius: 5px;">Coca-Cola</a> <a class="blues-clues" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Blue's+Clues" style="padding: 5px; border-radius: 5px;">Blue's Clues</a> <a class="crayola" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Crayola" style="padding: 5px; border-radius: 5px;">Crayola</a> <a class="tiana" href="https://www.4sgm.com/lsearch.jhtm?noKeywords=true&amp;facetNameValue=Status_value_In+Stock&amp;facetNameValue=Licensed+Characters_value_Tiana" style="padding: 5px; border-radius: 5px;">Tiana</a> <a class="moana" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Moana" style="padding: 5px; border-radius: 5px;">Moana</a> <a class="iron-man" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Iron+Man" style="padding: 5px; border-radius: 5px;">Iron Man</a> <a class="superman" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Superman" style="padding: 5px; border-radius: 5px;">Superman</a> <a class="batman" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Batman" style="padding: 5px; border-radius: 5px;">Batman</a> <a class="rapunzel" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Rapunzel" style="padding: 5px; border-radius: 5px;">Rapunzel</a> <a class="black-panther" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Black+Panther" style="padding: 5px; border-radius: 5px;">Black Panther</a> <a class="hulk" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Hulk" style="padding: 5px; border-radius: 5px;">Hulk</a> <a class="encanto" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Encanto" style="padding: 5px; border-radius: 5px;">Encanto</a> </div>
+<h2>All Licensed Characters</h2>
+<!-- Alphanumeric List -->
+<div class="alphabet"><a href="#A">A</a> <a href="#B">B</a> <a href="#C">C</a> <a href="#D">D</a> <a href="#E">E</a> <a href="#F">F</a> <a href="#G">G</a> <a href="#H">H</a> <a href="#I">I</a> <a href="#J">J</a> <a href="#K">K</a> <a href="#L">L</a> <a href="#M">M</a> <a href="#N">N</a> <a href="#O">O</a> <a href="#P">P</a> <a href="#Q">Q</a> <a href="#R">R</a> <a href="#S">S</a> <a href="#T">T</a> <a href="#U">U</a> <a href="#V">V</a> <a href="#W">W</a> <a href="#X">X</a> <a href="#Y">Y</a> <a href="#Z">Z</a></div>
+<!-- Responsive Grid for Character Sections -->
+<div class="row"><!-- A Section -->
+<div class="col-sm-4">
+<h2 id="A">A</h2>
+<ul class="character-list">
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_101+Dalmatians">101 Dalmatians</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Aladdin">Aladdin</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Animal+Crossing">Animal Crossing</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Ant-Man">Ant-Man</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Avengers">Avengers</a></li>
+</ul>
+</div>
+<!-- B Section -->
+<div class="col-sm-4">
+<h2 id="B">B</h2>
+<ul class="character-list">
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Barbie">Barbie</a></li>
+<li> <a class="batman" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Batman">Batman</a></li>
+<li> <a class="beauty" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Beauty">Beauty</a></li>
+<li> <a class="belle" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Belle">Belle</a></li>
+<li> <a class="black-panther" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Black+Panther">Black Panther</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Black+Widow">Black Widow</a></li>
+<li> <a class="blues-clues" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Blue's+Clues">Blue's Clues</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Bluey">Bluey</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Bunnies">Bunnies</a></li>
+</ul>
+</div>
+<!-- C Section -->
+<div class="col-sm-4">
+<h2 id="C">C</h2>
+<ul class="character-list">
+<li> <a class="captain-america" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Captain+America">Captain America</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Captain+Marvel">Captain Marvel</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Care+Bears">Care Bears</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Cars">Cars</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Cars+3">Cars 3</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Cinderella">Cinderella</a></li>
+<li> <a class="coca-cola" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Coca-Cola">Coca-Cola</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Coco">Coco</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Corona">Corona</a></li>
+<li> <a class="crayola" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Crayola">Crayola</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Critical">Critical</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Cyberpunk">Cyberpunk</a></li>
+</ul>
+</div>
+</div>
+<div class="row"><!-- D Section -->
+<div class="col-sm-4">
+<h2 id="D">D</h2>
+<ul class="character-list">
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Daredevil">Daredevil</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Darth+Vader">Darth Vader</a></li>
+<li> <a class="dc-comics dc-comics" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_DC+Comics">DC Comics</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_DC+Super+Hero+Girls">DC Super Hero Girls</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Despicable+Me">Despicable Me</a></li>
+<li> <a class="disney disney" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Disney">Disney</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Disney+100">Disney 100</a></li>
+<li> <a class="disney-ariel" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Disney+Ariel">Disney Ariel</a></li>
+<li> <a class="disney-baby disney-baby" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Disney+Baby">Disney Baby</a></li>
+<li> <a class="disney-junior disney-junior" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Disney+Junior">Disney Junior</a></li>
+<li> <a class="disney-princess disney-princess" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Disney+Princess">Disney Princess</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Disney+Ralph+Breaks+the+Intern">Disney Ralph Breaks the Internet</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Doctor+Octopus">Doctor Octopus</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Doctor+Strange">Doctor Strange</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Dora">Dora</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_DreamWorks">DreamWorks</a></li>
+</ul>
+</div>
+<!-- E Section -->
+<div class="col-sm-4">
+<h2 id="E">E</h2>
+<ul class="character-list">
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Elmo">Elmo</a></li>
+<li> <a class="encanto" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Encanto">Encanto</a></li>
+</ul>
+</div>
+<!-- F Section -->
+<div class="col-sm-4">
+<h2 id="F">F</h2>
+<ul class="character-list">
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Falcon">Falcon</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Fanta">Fanta</a></li>
+<li> <a class="fisher-price" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Fisher-Price">Fisher-Price</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_FORTNITE">FORTNITE</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Friends">Friends</a></li>
+<li> <a class="frozen frozen" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Frozen">Frozen</a></li>
+<li> <a class="frozen-2" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Frozen+2">Frozen 2</a></li>
+</ul>
+</div>
+</div>
+<div class="row"><!-- G Section -->
+<div class="col-sm-4">
+<h2 id="G">G</h2>
+<ul class="character-list">
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_G.I.Joe">G.I.Joe</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_GPK">GPK</a></li>
+<li> <a class="grogu" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Grogu">Grogu</a></li>
+</ul>
+</div>
+<!-- H Section -->
+<div class="col-sm-4">
+<h2 id="H">H</h2>
+<ul class="character-list">
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Harry+Potter">Harry Potter</a></li>
+<li> <a class="hasbro" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Hasbro">Hasbro</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Hawkeye">Hawkeye</a></li>
+<li> <a class="hello-kitty hello-kitty" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Hello+Kitty">Hello Kitty</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_He-Man">He-Man</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Hercules">Hercules</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Heroes">Heroes</a></li>
+<li> <a class="hot-wheels" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Hot+Wheels">Hot Wheels</a></li>
+<li> <a class="hulk hulk" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Hulk">Hulk</a></li>
+</ul>
+</div>
+<!-- I Section -->
+<div class="col-sm-4">
+<h2 id="I">I</h2>
+<ul class="character-list">
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Incredibles">Incredibles</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Infinity">Infinity</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Iron+Fist">Iron Fist</a></li>
+<li> <a class="iron-man" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Iron+Man">Iron Man</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_IRONMAN">IRONMAN</a></li>
+</ul>
+</div>
+</div>
+<div class="row"><!-- J Section -->
+<div class="col-sm-4">
+<h2 id="J">J</h2>
+<ul class="character-list">
+<li> <a class="jasmine" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Jasmine">Jasmine</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Jiggles">Jiggles</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_JojoSiwa">JojoSiwa</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Jungle+Book">Jungle Book</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Jurassic+Park">Jurassic Park</a></li>
+<li> <a class="justice-league justice-league" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Justice+League">Justice League</a></li>
+</ul>
+</div>
+<!-- K Section -->
+<div class="col-sm-4">
+<h2 id="K">K</h2>
+<ul class="character-list">
+<li><a href="#">No entries for K</a></li>
+</ul>
+</div>
+<!-- L Section -->
+<div class="col-sm-4">
+<h2 id="L">L</h2>
+<ul class="character-list">
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?noKeywords=true&amp;facetNameValue=Status_value_In+Stock&amp;facetNameValue=Licensed+Characters_value_Lady+and+the+Tramp">Lady and the Tramp</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Lightyear">Lightyear</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Lion+King">Lion King</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Little+Mimos">Little Mimos</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_LOL+Surp">LOL Surp</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Looney+Tunes">Looney Tunes</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Lucasfilm">Lucasfilm</a></li>
+</ul>
+</div>
+</div>
+<div class="row"><!-- M Section -->
+<div class="col-sm-4">
+<h2 id="M">M</h2>
+<ul class="character-list">
+<li> <a class="mandalorian" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Mandalorian">Mandalorian</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Mario">Mario</a></li>
+<li> <a class="marvel marvel" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Marvel">Marvel</a></li>
+<li> <a class="mattel" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Mattel">Mattel</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Merida">Merida</a></li>
+<li> <a class="mickey-mouse-and-friends mickey-mouse-and-friends" href="https://www.4sgm.com/lsearch.jhtm?noKeywords=true&amp;facetNameValue=Status_value_In+Stock&amp;facetNameValue=Licensed+Characters_value_Mickey+Mouse+%26+Friends">Mickey Mouse &amp; Friends</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Miles+Morales">Miles Morales</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Minis">Minis</a></li>
+<li> <a class="minnie-mouse" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Minnie+Mouse">Minnie Mouse</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Miraculous">Miraculous</a></li>
+<li> <a class="moana" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Moana">Moana</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Modelo">Modelo</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Modok">Modok</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Monster+Hi">Monster High</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Mortal">Mortal</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Mulan">Mulan</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_My+Disney+Nursery">My Disney Nursery</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_My+Hero">My Hero</a></li>
+<li> <a class="my-little-pony" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_My+Little+Pony">My Little Pony</a></li>
+</ul>
+</div>
+<!-- N Section -->
+<div class="col-sm-4">
+<h2 id="N">N</h2>
+<ul class="character-list">
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_New+Groove">New Groove</a></li>
+<li> <a class="nickelodeon" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Nickelodeon">Nickelodeon</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Nightmare">Nightmare</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Ninja+Turtles">Ninja Turtles</a></li>
+</ul>
+</div>
+<!-- O Section -->
+<div class="col-sm-4">
+<h2 id="O">O</h2>
+<ul class="character-list">
+<li><a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Onward">Onward</a></li>
+</ul>
+</div>
+</div>
+<div class="row"><!-- P Section -->
+<div class="col-sm-4">
+<h2 id="P">P</h2>
+<ul class="character-list">
+<li> <a class="paw-patrol" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Paw+Patrol">Paw Patrol</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Peanuts">Peanuts</a></li>
+<li> <a class="peppa-pig" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Peppa+Pig">Peppa Pig</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Peter+Pan">Peter Pan</a></li>
+<li> <a class="pixar" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Pixar">Pixar</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_PJ+Masks">PJ Masks</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_PlaySkool">PlaySkool</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Pokemon">Pokemon</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Power+Rangers">Power Rangers</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Princess+The+Frog">Princess The Frog</a></li>
+</ul>
+</div>
+<!-- Q Section -->
+<div class="col-sm-4">
+<h2 id="Q">Q</h2>
+<ul class="character-list">
+<li><a href="#">No entries for Q</a></li>
+</ul>
+</div>
+<!-- R Section -->
+<div class="col-sm-4">
+<h2 id="R">R</h2>
+<ul class="character-list">
+<li> <a class="rapunzel" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Rapunzel">Rapunzel</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Remix">Remix</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Rhino">Rhino</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Robin+Hood">Robin Hood</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Rocket+Raccoon">Rocket Raccoon</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Rugrats">Rugrats</a></li>
+</ul>
+</div>
+</div>
+<div class="row"><!-- S Section -->
+<div class="col-sm-4">
+<h2 id="S">S</h2>
+<ul class="character-list">
+<li> <a class="santa" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Santa">Santa</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Scarlet+Witch">Scarlet Witch</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Scooby-Doo">Scooby-Doo</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Sesame+Street">Sesame Street</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_She-Hulk">She-Hulk</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Snoopy">Snoopy</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Snow+White">Snow White</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Snowman">Snowman</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_SONIC">SONIC</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Soul">Soul</a></li>
+<li> <a class="spider-man" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Spiderman">Spiderman</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Spider-Woman">Spider-Woman</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Sponge+Bob">Sponge Bob</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Sprite">Sprite</a></li>
+<li> <a class="star-wars star-wars" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Star+Wars">Star Wars</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Star-Lord">Star-Lord</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Stitch">Stitch</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Strawberry+Shortcake">Strawberry Shortcake</a></li>
+<li> <a class="superman" href="https://www.4sgm.com/lsearch.jhtm?cid=&amp;noKeywords=true&amp;keywords=&amp;minPrice=&amp;maxPrice=&amp;facetNameValue=Licensed+Characters_value_Superman">Superman</a></li>
+</ul>
+</div>
+<!-- T Section -->
+<div class="col-sm-4">
+<h2 id="T">T</h2>
+<ul class="character-list">
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?noKeywords=true&amp;facetNameValue=Status_value_In+Stock&amp;facetNameValue=Licensed+Characters_value_Thanos">Thanos</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?noKeywords=true&amp;facetNameValue=Status_value_In+Stock&amp;facetNameValue=Licensed+Characters_value_The+Jetson">The Jetson</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?noKeywords=true&amp;facetNameValue=Status_value_In+Stock&amp;facetNameValue=Licensed+Characters_value_Thomas+%26+Friends">Thomas &amp; Friends</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?noKeywords=true&amp;facetNameValue=Status_value_In+Stock&amp;facetNameValue=Licensed+Characters_value_Thomas+the+Train">Thomas the Train</a></li>
+<li> <a class="thor" href="https://www.4sgm.com/lsearch.jhtm?noKeywords=true&amp;facetNameValue=Status_value_In+Stock&amp;facetNameValue=Licensed+Characters_value_Thor">Thor</a></li>
+<li> <a class="tiana" href="https://www.4sgm.com/lsearch.jhtm?noKeywords=true&amp;facetNameValue=Status_value_In+Stock&amp;facetNameValue=Licensed+Characters_value_Tiana">Tiana</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?noKeywords=true&amp;facetNameValue=Status_value_In+Stock&amp;facetNameValue=Licensed+Characters_value_Tinkerbell">Tinkerbell</a></li>
+<li> <a class="toy-story toy-story" href="https://www.4sgm.com/lsearch.jhtm?noKeywords=true&amp;facetNameValue=Status_value_In+Stock&amp;facetNameValue=Licensed+Characters_value_Toy+Story">Toy Story</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?noKeywords=true&amp;facetNameValue=Status_value_In+Stock&amp;facetNameValue=Licensed+Characters_value_Toy+Story+4">Toy Story 4</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?noKeywords=true&amp;facetNameValue=Status_value_In+Stock&amp;facetNameValue=Licensed+Characters_value_Transformer">Transformer</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?noKeywords=true&amp;facetNameValue=Status_value_In+Stock&amp;facetNameValue=Licensed+Characters_value_Trolls">Trolls</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?noKeywords=true&amp;facetNameValue=Status_value_In+Stock&amp;facetNameValue=Licensed+Characters_value_Tweety">Tweety</a></li>
+</ul>
+</div>
+<!-- U Section -->
+<div class="col-sm-4">
+<h2 id="U">U</h2>
+<ul class="character-list">
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?noKeywords=true&amp;facetNameValue=Status_value_In+Stock&amp;facetNameValue=Licensed+Characters_value_Universal">Universal</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?noKeywords=true&amp;facetNameValue=Status_value_In+Stock&amp;facetNameValue=Licensed+Characters_value_Up">Up</a></li>
+</ul>
+</div>
+</div>
+<div class="row"><!-- V Section -->
+<div class="col-sm-4">
+<h2 id="V">V</h2>
+<ul class="character-list">
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?noKeywords=true&amp;facetNameValue=Status_value_In+Stock&amp;facetNameValue=Licensed+Characters_value_Vampirina">Vampirina</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?noKeywords=true&amp;facetNameValue=Status_value_In+Stock&amp;facetNameValue=Licensed+Characters_value_Venom">Venom</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?noKeywords=true&amp;facetNameValue=Status_value_In+Stock&amp;facetNameValue=Licensed+Characters_value_Vision">Vision</a></li>
+</ul>
+</div>
+<!-- W Section -->
+<div class="col-sm-4">
+<h2 id="W">W</h2>
+<ul class="character-list">
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?noKeywords=true&amp;facetNameValue=Status_value_In+Stock&amp;facetNameValue=Licensed+Characters_value_War+Machine">War Machine</a></li>
+<li> <a class="warner-bros" href="https://www.4sgm.com/lsearch.jhtm?noKeywords=true&amp;facetNameValue=Status_value_In+Stock&amp;facetNameValue=Licensed+Characters_value_Warner+Bros.">Warner Bros.</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?noKeywords=true&amp;facetNameValue=Status_value_In+Stock&amp;facetNameValue=Licensed+Characters_value_Wasp">Wasp</a></li>
+<li> <a class="winnie-the-pooh" href="https://www.4sgm.com/lsearch.jhtm?noKeywords=true&amp;facetNameValue=Status_value_In+Stock&amp;facetNameValue=Licensed+Characters_value_Winnie+the+Pooh">Winnie the Pooh</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?noKeywords=true&amp;facetNameValue=Status_value_In+Stock&amp;facetNameValue=Licensed+Characters_value_Winter+Soldier">Winter Soldier</a></li>
+<li> <a href="https://www.4sgm.com/lsearch.jhtm?noKeywords=true&amp;facetNameValue=Status_value_In+Stock&amp;facetNameValue=Licensed+Characters_value_Wolverine">Wolverine</a></li>
+<li> <a class="wonder-woman" href="https://www.4sgm.com/lsearch.jhtm?noKeywords=true&amp;facetNameValue=Status_value_In+Stock&amp;facetNameValue=Licensed+Characters_value_Wonder+Woman">Wonder Woman</a></li>
+</ul>
+</div>
+<!-- X Section -->
+<div class="col-sm-4">
+<h2 id="X">X</h2>
+<ul class="character-list">
+<li><a href="#">No entries for X</a></li>
+</ul>
+</div>
+</div>
+<div class="row"><!-- Y Section -->
+<div class="col-sm-4">
+<h2 id="Y">Y</h2>
+<ul class="character-list">
+<li><a href="#">No entries for Y</a></li>
+</ul>
+</div>
+<!-- Z Section -->
+<div class="col-sm-4">
+
+<h2 id="Z">Z</h2>
+<ul class="character-list">
+<li><a href="#">No entries for Z</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="gtx-trans" style="position: absolute; left: 337px; top: -23px;">
+<div class="gtx-trans-icon"> </div>
+</div>
